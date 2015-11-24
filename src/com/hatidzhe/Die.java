@@ -10,7 +10,7 @@ public class Die {
 
     public void rolls() {
         // a random number between 1 and 6.
-        die1 = (int)(Math.random()*6) + 1;
+        die1 = (int) (Math.random() * 6) + 1;
 
     }
 
@@ -18,8 +18,6 @@ public class Die {
         // Return the number showing on the first die.
         return die1;
     }
-
-
 
 
     public int getTotal() {
