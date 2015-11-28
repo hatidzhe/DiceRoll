@@ -2,9 +2,10 @@ package com.hatidzhe;
 
 public class Die {
 
-    private int die1;
+    public int die1;
 
     public Die() {
+
         rolls();
     }
 
@@ -19,11 +20,5 @@ public class Die {
         return die1;
     }
 
-
-    public int getTotal() {
-        // Return the total showing on the two dice.
-        return die1;
-    }
-
-}  // end class Dice
+}
 
