@@ -3,9 +3,6 @@ package com.hatidzhe;
 
 public class DiceThrow {
 
-    public int die1, die2, die3;
-
-
     public DiceThrow() {
 
         roll();
@@ -15,37 +12,22 @@ public class DiceThrow {
     public void roll() {
 
         Die d = new Die();
-        Die dd = new Die();
-        Die ddd = new Die();
-
         d.rolls();
-        dd.rolls();
-        ddd.rolls();
 
-        die1 = d.getDie1();
-        die2 = dd.getDie1();
-        die3 = ddd.getDie1();
 
     }
 
 
-    public int getDie1() {
+    public String getResult() {
 
-        // Return the number showing on the first die.
-        return die1;
+        Die die1 = new Die();
+        Die die2 = new Die();
+        Die die3 = new Die();
+
+        String t1 = die1.getDie1() + " " + die2.getDie1() + " " + die3.getDie1();
+
+        return t1;
+
     }
-
-    public int getDie2() {
-
-
-        return die2;
-    }
-
-    public int getDie3() {
-
-
-        return die3;
-    }
-
 
 }
