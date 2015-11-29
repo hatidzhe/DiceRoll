@@ -13,12 +13,14 @@ public class Die {
         // a random number between 1 and 6.
         die1 = (int) (Math.random() * 6) + 1;
 
+
     }
 
     public int getDie1() {
-        // Return the number showing on the first die.
+
         return die1;
     }
+
 
 }
 
